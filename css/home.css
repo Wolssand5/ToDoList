@@ -1,0 +1,848 @@
+:root {
+  /* CSS HEX */
+  --black: #000000ff;
+  --rich-black: #00141bff;
+  --gunmetal: #002836ff;
+  --indigo-dye: #004f6bff;
+  --cerulean: #0076a0ff;
+  --celestial-blue: #009dd5ff;
+  --write: #dde1e7;
+  /* CSS HSL */
+  --black: hsla(0, 0%, 0%, 1);
+  --gray100: rgba(110, 109, 109, 0.651);
+  --rich-black: hsla(196, 100%, 5%, 1);
+  --gunmetal: hsla(196, 100%, 11%, 1);
+  --indigo-dye: hsla(196, 100%, 21%, 1);
+  --cerulean: hsla(196, 100%, 31%, 1);
+  --celestial-blue: hsla(196, 100%, 42%, 1);
+  --shadow-1: 0px 5px 5px 0px rgb(216, 220, 223);
+  --shadow-2: 0px 10px 10px 5px rgb(40, 42, 43, 80%);
+  --shadow-3: 50px 50px 0px 0px rgba(100, 199, 230, 0.5),
+    50px 50px 0px 0px rgba(121, 198, 236, 0.1);
+  --bs-shadow-card: 0 3px 50px 0 #263b63;
+  --gradient-scroll: linear-gradient(transparent, rgba(5, 85, 114, 0.418), #009dd5ff);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-scroll);
+  border-radius: 6px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, rgba(155, 24, 241, 0.418), rgb(152, 13, 245));
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  background: var(--write);
+}
+
+body {
+  position: relative;
+}
+
+body,
+div,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+blockquote {
+   margin: 0; 
+  padding: 0;
+  direction: ltr;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--black);
+}
+
+/*btn sroll*/
+
+.btn-up,
+.btn-down {
+  position: fixed;
+  color: var(--black);
+  background: var(--write);
+  font-size: 22px;
+  padding: 15px 5px;
+  border-radius: 5px;
+  bottom: 0;
+  right: 30px;
+  opacity: 0;
+  z-index: 999;
+  box-shadow: -3px -3px 7px var(--write-shadow),
+    3px 3px 5px rgba(94, 104, 121, .288);
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-up:hover,
+.btn-down:hover {
+  box-shadow: inset -3px -3px 5px var(--write-shadow),
+    inset 3px 3px 3px rgba(94, 104, 121, .288);
+}
+
+.btn-up.active,
+.btn-down.active {
+  pointer-events: auto;
+  bottom: 36px;
+  opacity: 1;
+}
+
+.btn-up span,
+.btn-down span {
+  position: absolute;
+  bottom: 0;
+  height: 97%;
+  width: 2px;
+
+}
+
+/*----footer----*/
+
+footer {
+  padding: 12px 0;
+
+}
+
+.foot-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-content p {
+  font-size: 12px;
+  max-height: 20px;
+
+}
+
+.head-foot {
+  background: var(--celestial-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* footer logo*/
+.foot-log {
+  /*  display: none;*/
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.foot-log h1 {
+  font-size: 180px;
+  font-weight: 800;
+  line-height: 200px;
+  margin:10px;
+  filter: drop-shadow(-3px -3px 7px var(--write-shadow));
+  border-radius: 5px;
+}
+
+.foot-log img {
+  width: 360px;
+}
+
+
+
+.foot-log h1 .wo {
+  color: var(--rich-black);
+  opacity: .8;
+}
+
+.foot-log h1 .ri {
+  color: var(--celestial-blue);
+}
+
+
+/* fin footer logo*/
+
+.contacto-footer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  padding-inline: 10%;
+
+}
+
+/*projecto10 form-mensage*/
+.form_mesaje {
+  display: block;
+  width: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+
+.form_mesaje form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background: var(--write);
+  box-shadow: -3px -3px 7px var(--write-shadow),
+    3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+form h3 {
+  font-size: 20px;
+  margin: 2px;
+  color: var(--celestial-blue);
+}
+
+form .nombre,
+form .email {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  left: 0;
+  margin: 20px 0;
+
+}
+
+.nombre span,
+.email span {
+  position: absolute;
+  color: var(--celestial-blue);
+  font-size: 16px;
+  top: 0;
+  left: 0.5rem;
+  transition: top 300ms ease-in,
+    left 200ms ease-in, font-size 200ms ease-in;
+  color: var(--celestial-blue);
+  cursor: text;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--celestial-blue);
+  outline: none;
+  background: transparent;
+  transition: all 400ms ease-in-out;
+
+}
+
+
+.form_mesaje form input:hover {
+  border-bottom: 2px solid var(-);
+}
+
+.form_mesaje form input:focus {
+  border-bottom: 2px solid var(--celestial-blue);
+}
+
+input:focus~span,
+input:valid~span {
+  color: var(--celestial-blue);
+  top: -12px;
+  font-size: 12px;
+  left: 12px;
+}
+
+.text_mensaje {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.text_mensaje textarea {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 5px;
+  background: transparent;
+  border: none;
+  color: var(--black);
+  border-bottom: 2px solid var(--celestial-blue);
+  outline: none;
+  transition: all 1s ease-in-out;
+}
+
+.text_mensaje textarea:hover {
+  border-radius: 5px;
+  height: 150px;
+  bottom: 5px;
+  position: absolute;
+  z-index: 2;
+  background: var(--black);
+  color: var(--write);
+  opacity: 0.96;
+}
+
+.text_mensaje:has(textarea:hover)>textarea::placeholder {
+  color: var(--celestial-blue);
+
+}
+
+.text_mensaje textarea::placeholder {
+  position: absolute;
+  color: #0d43da;
+
+}
+
+.form_mesaje form .bton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+form .bton>button {
+  position: relative;
+  background: #0731a3;
+  font-family: poppins;
+  font-weight: bold;
+  height: 1.8rem;
+  width: 50%;
+  max-width: 50%;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.form_mesaje form>button:hover {
+  background: var(--celestial-blue);
+}
+
+.form_mesaje form button:hover>.send {
+  left: 40%;
+  color: #f1f1f1;
+}
+
+
+form button .send {
+  position: absolute;
+  font-size: 18px;
+  left: -9em;
+  top: 15%;
+  border: none;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
+/* fin  form-mensage*/
+.contenido-sociles-mapa-ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sociales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sociales .bton {
+  margin: 10px 10px 10px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.sociales .bton span {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  display: block;
+  background-color: var(--write);
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: -3px -3px 7px var(--write-shadow),
+    3px 3px 5px rgba(94, 104, 121, .288);
+  z-index: 2;
+}
+
+.sociales .bton span i {
+  font-size: 20px;
+  line-height: 35px;
+  color: var(--black);
+}
+
+.sociales .bton span:hover {
+  box-shadow: inset -3px -3px 7px var(--write-shadow),
+    inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+.sociales .bton .tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  background: var(--write);
+  font-size: 14px;
+  width: 100%;
+  padding: 4px 20px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px rgba(94, 104, 121, .288);
+  ;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sociales .bton:hover .tooltip {
+  top: -50px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sociales .bton .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  bottom: -8px;
+  left: 50%;
+  background: var(--write);
+  transform: translateX(-50%) rotate(45deg);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.sociales .facebook:hover .tooltip,
+.sociales .facebook:hover .tooltip::before {
+  background: #3b5998;
+  color: #ffffff;
+}
+
+.sociales .google:hover .tooltip,
+.sociales .google:hover .tooltip::before {
+  background: #Ea4335;
+  color: #ffffff;
+}
+
+.sociales .behance:hover .tooltip,
+.sociales .behance:hover .tooltip::before {
+  background: #053eff;
+  color: #ffffff;
+}
+
+.sociales .github:hover .tooltip,
+.sociales .github:hover .tooltip::before {
+  background: #171515;
+  color: #ffffff;
+}
+
+.sociales .whatsapp:hover .tooltip,
+.sociales .whatsapp:hover .tooltip::before {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.mapa-ubucacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.mapa {
+  margin: 20px 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 7px var(--write-shadow),
+    inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+.mapa iframe {
+  border-radius: 10px;
+  width: 250px;
+}
+
+.ubicacion {
+  position: relative;
+  display: block;
+  place-content: center;
+  width: 100%;
+}
+
+.ubicacion::after {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  width: 100%;
+  /* Esto es para que el contenedor ocupe todo el ancho */
+  height: 1px;
+  background: var(--black);
+}
+
+.ubicacion i {
+  font-size: 16px;
+  color: #f10a0a;
+  padding: 10px;
+}
+
+.ubicacion p {
+
+  padding: 10px;
+  text-wrap: wrap;
+  font-size: 14px;
+  color: var(--black);
+}
+
+/* footer responsive*/
+@media(width <= 992px) {
+
+  .foot-log h1 {
+    font-size: 140px;
+    font-weight: 800;
+    line-height: 120px;
+  }
+
+  .foot-log img {
+    width: 240px;
+  }
+
+  .contacto-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .contenido-sociles-mapa-ubicacion {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .mapa {
+    margin: 10px 0 0 0;
+
+  }
+
+  .mapa iframe {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .mapa-ubucacion {
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+  }
+
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 5px 0;
+  }
+
+  .ubicacion::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 100%;
+    /* Esto es para que el contenedor ocupe todo el ancho */
+    height: 1px;
+    background: var(--black);
+  }
+
+  .ubicacion h2 {
+    font-size: 18px;
+  }
+
+  .ubicacion p {
+    font-size: 14px;
+  }
+
+  .ubicacion i {
+    padding: 0 10px;
+  }
+
+  /*responsive formulario*/
+
+  form h3 {
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  form .nombre,
+  form .email {
+    margin: 10px;
+    height: 100%;
+  }
+
+  .nombre span,
+  .email span {
+    font-size: 18px;
+    padding: 10px 0;
+    top: 0;
+  }
+
+  input:focus~span,
+  input:valid~span {
+    top: -10px;
+    font-size: 16px;
+    left: 16px;
+  }
+
+
+  .text_mensaje textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .text_mensaje textarea:hover {
+    height: 180px;
+  }
+
+
+  .form_mesaje form>.bton {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  form>.bton>button {
+    height: 35px;
+    max-width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+
+  }
+
+  .form_mesaje form button:hover {
+    background: var(--celestial-blue);
+  }
+
+  form button .send {
+    font-size: 20px;
+
+  }
+
+  form .bton>button {
+    font-size: 18px;
+    font-weight: 600;
+    height: 2rem;
+    width: 50%;
+  }
+
+  form>button:hover .send {
+    left: 35%;
+  }
+
+}
+
+
+@media (width <= 768px) {
+
+  .foot-log h1 {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 120px; 
+  }
+
+  .foot-log img {
+    width: 220px;
+  }
+
+  .contacto-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    justify-items: center;
+
+  }
+
+  .form_mesaje {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .form_mesaje form {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 5px 30px;
+  }
+
+  form h3 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+
+  form .nombre,
+  form .email {
+    margin: 15px 0;
+    height: 100%;
+  }
+
+  .nombre span,
+  .email span {
+    font-size: 18px;
+    top: -10px;
+  }
+
+  input:focus~span,
+  input:valid~span {
+    top: -20px;
+    font-size: 16px;
+    left: 16px;
+  }
+
+  .text_mensaje {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  .text_mensaje textarea {
+    font-size: 14px;
+  }
+
+  .text_mensaje textarea:hover {
+    height: 180px;
+  }
+
+
+  .form_mesaje form>.bton {
+    margin: 10px;
+  }
+
+  form>.bton>button {
+    height: 35px;
+    max-width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+
+  }
+
+  .form_mesaje form button:hover {
+    background: var(--celestial-blue);
+  }
+
+  form button .send {
+    font-size: 20px;
+
+  }
+
+  /* mapa */
+  .mapa-ubucacion {
+    flex-direction: column;
+
+  }
+
+  .mapa {
+    margin: 10px 0;
+  }
+
+
+  .ubicacion {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+
+
+  }
+
+  .ubicacion::after {
+    bottom: 10px;
+    left: 0;
+  }
+
+  .ubicacion p {
+    font-size: 14px;
+    padding-bottom: 10px
+  }
+
+  .ubicacion i {
+    padding: 0 10px;
+  }
+}
+
+@media (width <= 576px) {
+
+  .foot-log h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .foot-log img {
+    width: 140px;
+  }
+
+  .ubicacion {
+    padding: 20px;
+  }
+
+  .ubicacion i {
+    padding: 0 10px;
+  }
+
+  .ubicacion::after {
+    bottom: 4px;
+    width: 90%;
+  }
+}

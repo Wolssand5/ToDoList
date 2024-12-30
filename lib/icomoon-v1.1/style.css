@@ -1,0 +1,694 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?xlp6i2');
+  src:  url('fonts/icomoon.eot?xlp6i2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?xlp6i2') format('truetype'),
+    url('fonts/icomoon.woff?xlp6i2') format('woff'),
+    url('fonts/icomoon.svg?xlp6i2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ril-"], [class*=" ril-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ril-emailril:before {
+  content: "\e917";
+}
+.ril-sendril:before {
+  content: "\e927";
+}
+.ril-align-justifyril:before {
+  content: "\e901";
+}
+.ril-arrow-leftril:before {
+  content: "\e928";
+}
+.ril-arrow-rightril:before {
+  content: "\e92b";
+}
+.ril-chevron-leftril:before {
+  content: "\e902";
+}
+.ril-chevron-rightril:before {
+  content: "\e903";
+}
+.ril-chevrons-downril:before {
+  content: "\e904";
+}
+.ril-chevrons-leftril:before {
+  content: "\ea02";
+}
+.ril-chevrons-rightril:before {
+  content: "\ea03";
+}
+.ril-chevrons-upril:before {
+  content: "\e905";
+}
+.ril-eye1ril:before {
+  content: "\e92e";
+}
+.ril-eye-offril:before {
+  content: "\e92f";
+}
+.ril-github1ril:before {
+  content: "\e930";
+}
+.ril-mailril:before {
+  content: "\e931";
+}
+.ril-maximizeril:before {
+  content: "\e906";
+}
+.ril-more-horizontalril:before {
+  content: "\e907";
+}
+.ril-more-verticalril:before {
+  content: "\e908";
+}
+.ril-moveril:before {
+  content: "\e909";
+}
+.ril-navigation-2ril:before {
+  content: "\e932";
+}
+.ril-sunril:before {
+  content: "\e933";
+}
+.ril-user1ril:before {
+  content: "\e935";
+}
+.ril-usersril:before {
+  content: "\e936";
+}
+.ril-xril:before {
+  content: "\e937";
+}
+.ril-linkril:before {
+  content: "\e90a";
+}
+.ril-cameraril:before {
+  content: "\e90b";
+}
+.ril-microphoneril:before {
+  content: "\e90c";
+}
+.ril-checkmark1ril:before {
+  content: "\e90d";
+}
+.ril-cancelril:before {
+  content: "\e90e";
+}
+.ril-plusril:before {
+  content: "\e90f";
+}
+.ril-cog1ril:before {
+  content: "\e910";
+}
+.ril-cancel1ril:before {
+  content: "\e911";
+}
+.ril-location1ril:before {
+  content: "\e912";
+}
+.ril-trashcanril:before {
+  content: "\e915";
+}
+.ril-smileyril:before {
+  content: "\e913";
+}
+.ril-sadril:before {
+  content: "\e914";
+}
+.ril-lockedril:before {
+  content: "\e9c7";
+}
+.ril-unlockedril:before {
+  content: "\e9c8";
+}
+.ril-magnifierril:before {
+  content: "\e9c9";
+}
+.ril-gridril:before {
+  content: "\e9cc";
+}
+.ril-listril:before {
+  content: "\e9cd";
+}
+.ril-resizeril:before {
+  content: "\e9d5";
+}
+.ril-resize1ril:before {
+  content: "\e9d6";
+}
+.ril-enveloperil:before {
+  content: "\e938";
+}
+.ril-heartril:before {
+  content: "\e9d7";
+}
+.ril-moonril:before {
+  content: "\e9dd";
+}
+.ril-popoutril:before {
+  content: "\e9de";
+}
+.ril-popinril:before {
+  content: "\e9df";
+}
+.ril-globeril:before {
+  content: "\e9ff";
+}
+.ril-clipboardril:before {
+  content: "\ea00";
+}
+.ril-switchril:before {
+  content: "\e916";
+}
+.ril-adoberil:before {
+  content: "\e918";
+  color: #f00;
+}
+.ril-adobeacrobatreaderril:before {
+  content: "\e919";
+  color: #ee3f24;
+}
+.ril-adobeaftereffectsril:before {
+  content: "\e91a";
+  color: #d291ff;
+}
+.ril-adobeauditionril:before {
+  content: "\e91b";
+  color: #00e4bb;
+}
+.ril-adobecreativecloudril:before {
+  content: "\e91c";
+  color: #d41818;
+}
+.ril-adobedreamweaverril:before {
+  content: "\e91d";
+  color: #35fa00;
+}
+.ril-adobeillustratorril:before {
+  content: "\e91e";
+  color: #ff7c00;
+}
+.ril-adobeindesignril:before {
+  content: "\e91f";
+  color: #fd3f93;
+}
+.ril-adobelightroomccril:before {
+  content: "\e920";
+  color: #3df0f0;
+}
+.ril-adobelightroomclassicril:before {
+  content: "\e921";
+  color: #add5ec;
+}
+.ril-adobephotoshopril:before {
+  content: "\e922";
+  color: #00c8ff;
+}
+.ril-adobepremiereril:before {
+  content: "\e923";
+  color: #ea77ff;
+}
+.ril-adobetypekitril:before {
+  content: "\e924";
+  color: #87ec00;
+}
+.ril-adobexdril:before {
+  content: "\e925";
+  color: #ff2bc2;
+}
+.ril-airbnbril:before {
+  content: "\e926";
+  color: #ff5a5f;
+}
+.ril-amazonril:before {
+  content: "\e929";
+  color: #f90;
+}
+.ril-amazonawsril:before {
+  content: "\e92a";
+}
+.ril-androidril:before {
+  content: "\e92c";
+  color: #3ddc84;
+}
+.ril-angularril:before {
+  content: "\e92d";
+  color: #dd0031;
+}
+.ril-behanceril:before {
+  content: "\e934";
+  color: #1769ff;
+}
+.ril-cplusplusril:before {
+  content: "\e93a";
+  color: #00599c;
+}
+.ril-csharpril:before {
+  content: "\e93c";
+  color: #239120;
+}
+.ril-css3ril:before {
+  content: "\e93d";
+  color: #1572b6;
+}
+.ril-csswizardryril:before {
+  content: "\e93e";
+  color: #f43059;
+}
+.ril-dot-netril:before {
+  content: "\e943";
+  color: #5c2d91;
+}
+.ril-etsyril:before {
+  content: "\e945";
+  color: #f16521;
+}
+.ril-evernoteril:before {
+  content: "\e946";
+  color: #00a82d;
+}
+.ril-facebookril:before {
+  content: "\e947";
+  color: #1877f2;
+}
+.ril-figmaril:before {
+  content: "\e948";
+  color: #f24e1e;
+}
+.ril-gitril:before {
+  content: "\e94b";
+  color: #f05032;
+}
+.ril-githubril:before {
+  content: "\e94d";
+}
+.ril-gmailril:before {
+  content: "\e94e";
+  color: #d14836;
+}
+.ril-goril:before {
+  content: "\e94f";
+  color: #00add8;
+}
+.ril-googleril:before {
+  content: "\e950";
+  color: #4285f4;
+}
+.ril-googlechromeril:before {
+  content: "\e952";
+  color: #4285f4;
+}
+.ril-googledriveril:before {
+  content: "\e954";
+  color: #4285f4;
+}
+.ril-googlehangoutsril:before {
+  content: "\e955";
+  color: #0c9d58;
+}
+.ril-googlepayril:before {
+  content: "\e956";
+  color: #5f6368;
+}
+.ril-googleplayril:before {
+  content: "\e957";
+  color: #607d8b;
+}
+.ril-gradleril:before {
+  content: "\e958";
+}
+.ril-grouponril:before {
+  content: "\e959";
+  color: #53a318;
+}
+.ril-html5ril:before {
+  content: "\e95f";
+  color: #e34f26;
+}
+.ril-internetexplorerril:before {
+  content: "\e963";
+  color: #0076d6;
+}
+.ril-iosril:before {
+  content: "\e964";
+}
+.ril-itunesril:before {
+  content: "\e965";
+  color: #fb5bc5;
+}
+.ril-javaril:before {
+  content: "\e966";
+  color: #007396;
+}
+.ril-javascriptril:before {
+  content: "\e967";
+  color: #f7df1e;
+}
+.ril-linuxril:before {
+  content: "\e96a";
+  color: #fcc624;
+}
+.ril-mail-dot-ruril:before {
+  content: "\e96c";
+  color: #168de2;
+}
+.ril-megaril:before {
+  content: "\e96f";
+  color: #d9272e;
+}
+.ril-messengerril:before {
+  content: "\e970";
+  color: #00b2ff;
+}
+.ril-microsoftril:before {
+  content: "\e971";
+  color: #666;
+}
+.ril-mysqlril:before {
+  content: "\e97e";
+  color: #4479a1;
+}
+.ril-nextdoorril:before {
+  content: "\e97f";
+  color: #00b246;
+}
+.ril-node-dot-jsril:before {
+  content: "\e981";
+  color: #393;
+}
+.ril-phpril:before {
+  content: "\e984";
+  color: #777bb4;
+}
+.ril-pinterestril:before {
+  content: "\e985";
+  color: #bd081c;
+}
+.ril-postgresqlril:before {
+  content: "\e989";
+  color: #336791;
+}
+.ril-pythonril:before {
+  content: "\e98a";
+  color: #3776ab;
+}
+.ril-pyupril:before {
+  content: "\e98b";
+  color: #9f55ff;
+}
+.ril-reactril:before {
+  content: "\e98e";
+  color: #61dafb;
+}
+.ril-sparkpostril:before {
+  content: "\e996";
+  color: #fa6423;
+}
+.ril-steemril:before {
+  content: "\e99d";
+  color: #4ba2f2;
+}
+.ril-steemitril:before {
+  content: "\e99e";
+  color: #06d6a9;
+}
+.ril-steinbergril:before {
+  content: "\e99f";
+  color: #c90827;
+}
+.ril-stencylril:before {
+  content: "\e9a0";
+  color: #8e1c04;
+}
+.ril-stitcherril:before {
+  content: "\e9a1";
+}
+.ril-stylusril:before {
+  content: "\e9a4";
+}
+.ril-swaggerril:before {
+  content: "\e9a5";
+  color: #85ea2d;
+}
+.ril-tailwindcssril:before {
+  content: "\e939";
+  color: #38b2ac;
+}
+.ril-telegramril:before {
+  content: "\e9a7";
+  color: #2ca5e0;
+}
+.ril-teradataril:before {
+  content: "\e9a8";
+  color: #f37440;
+}
+.ril-tiktokril:before {
+  content: "\e9a9";
+}
+.ril-tripadvisorril:before {
+  content: "\e9aa";
+  color: #00af87;
+}
+.ril-truliaril:before {
+  content: "\e9ab";
+  color: #53b50a;
+}
+.ril-tumblrril:before {
+  content: "\e9ac";
+  color: #36465d;
+}
+.ril-twitchril:before {
+  content: "\e9ad";
+  color: #6441a4;
+}
+.ril-visaril:before {
+  content: "\e9b5";
+  color: #142787;
+}
+.ril-visualstudioril:before {
+  content: "\e9b6";
+  color: #5c2d91;
+}
+.ril-visualstudiocoderil:before {
+  content: "\e9b7";
+  color: #007acc;
+}
+.ril-vlcmediaplayerril:before {
+  content: "\e9b8";
+  color: #f80;
+}
+.ril-wazeril:before {
+  content: "\e9b9";
+  color: #333665;
+}
+.ril-whatsappril:before {
+  content: "\e9ba";
+  color: #25d366;
+}
+.ril-wikipediaril:before {
+  content: "\e9bb";
+}
+.ril-windowsril:before {
+  content: "\e9bc";
+  color: #0078d6;
+}
+.ril-wordpressril:before {
+  content: "\e9be";
+  color: #21759b;
+}
+.ril-xboxril:before {
+  content: "\e9bf";
+  color: #107c10;
+}
+.ril-xiaomiril:before {
+  content: "\e9c0";
+  color: #fa6709;
+}
+.ril-yahooril:before {
+  content: "\e9c1";
+  color: #6001d2;
+}
+.ril-youtuberil:before {
+  content: "\e9c2";
+  color: #f00;
+}
+.ril-comment-alt2-strokeril:before {
+  content: "\e9c5";
+}
+.ril-comment-alt2-fillril:before {
+  content: "\e9c6";
+}
+.ril-x-altx-altril:before {
+  content: "\e9ca";
+}
+.ril-rssril:before {
+  content: "\e9cb";
+}
+.ril-steering-wheelril:before {
+  content: "\e9cf";
+}
+.ril-headphonesril:before {
+  content: "\e9d0";
+}
+.ril-volumeril:before {
+  content: "\e9d2";
+}
+.ril-volume-muteril:before {
+  content: "\e9d3";
+}
+.ril-playril:before {
+  content: "\e9d4";
+}
+.ril-battery-halfril:before {
+  content: "\e9d8";
+}
+.ril-folder-fillril:before {
+  content: "\e9d9";
+}
+.ril-bars-altril:before {
+  content: "\e9db";
+}
+.ril-userril:before {
+  content: "\e900";
+}
+.ril-map-pin-strokeril:before {
+  content: "\e9e0";
+}
+.ril-homeril:before {
+  content: "\e9e1";
+}
+.ril-home2ril:before {
+  content: "\e9e2";
+}
+.ril-home3ril:before {
+  content: "\e9e3";
+}
+.ril-pencilril:before {
+  content: "\e9e4";
+}
+.ril-booksril:before {
+  content: "\e9e5";
+}
+.ril-folder-openril:before {
+  content: "\e9e6";
+}
+.ril-folder-plusril:before {
+  content: "\e9e7";
+}
+.ril-phoneril:before {
+  content: "\e9e8";
+}
+.ril-phone-hang-upril:before {
+  content: "\e9e9";
+}
+.ril-address-bookril:before {
+  content: "\e9ea";
+}
+.ril-envelopril:before {
+  content: "\e9eb";
+}
+.ril-locationril:before {
+  content: "\e9ec";
+}
+.ril-location2ril:before {
+  content: "\e9ed";
+}
+.ril-alarmril:before {
+  content: "\e9ee";
+}
+.ril-printerril:before {
+  content: "\e9ef";
+}
+.ril-keyboardril:before {
+  content: "\e9f0";
+}
+.ril-displayril:before {
+  content: "\e9f1";
+}
+.ril-mobileril:before {
+  content: "\e9f2";
+}
+.ril-tabletril:before {
+  content: "\e9f3";
+}
+.ril-databaseril:before {
+  content: "\e9f4";
+}
+.ril-bubbleril:before {
+  content: "\e9f5";
+}
+.ril-bubbles2ril:before {
+  content: "\e9f6";
+}
+.ril-spinner3ril:before {
+  content: "\e9fa";
+}
+.ril-spinner6ril:before {
+  content: "\e9fb";
+}
+.ril-searchril:before {
+  content: "\e9fc";
+}
+.ril-zoom-inril:before {
+  content: "\e9fd";
+}
+.ril-zoom-outril:before {
+  content: "\e9fe";
+}
+.ril-cogril:before {
+  content: "\ea01";
+}
+.ril-eyeril:before {
+  content: "\e9ce";
+}
+.ril-eye-blockedril:before {
+  content: "\e9d1";
+}
+.ril-warningril:before {
+  content: "\ea07";
+}
+.ril-notificationril:before {
+  content: "\ea08";
+}
+.ril-checkmarkril:before {
+  content: "\ea10";
+}
+.ril-enterril:before {
+  content: "\ea13";
+}
+.ril-circle-rightril:before {
+  content: "\ea42";
+}
+.ril-circle-leftril:before {
+  content: "\ea44";
+}
+.ril-checkbox-uncheckedril:before {
+  content: "\ea53";
+}
+.ril-radio-uncheckedril:before {
+  content: "\ea56";
+}
+.ril-html-five2ril:before {
+  content: "\eae5";
+}
+.ril-css31ril:before {
+  content: "\eae6";
+}

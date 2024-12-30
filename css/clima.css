@@ -1,0 +1,160 @@
+:root {
+  /* CSS HEX */
+  --black: #000000ff;
+  --rich-black: #00141bff;
+  --gunmetal: #002836ff;
+  --indigo-dye: #004f6bff;
+  --cerulean: #0076a0ff;
+  --celestial-blue: #009dd5ff;
+  --write: #dde1e7;
+  /* CSS HSL */
+  --black: hsla(0, 0%, 0%, 1);
+  --gray100: rgba(110, 109, 109, 0.651);
+  --rich-black: hsla(196, 100%, 5%, 1);
+  --gunmetal: hsla(196, 100%, 11%, 1);
+  --indigo-dye: hsla(196, 100%, 21%, 1);
+  --cerulean: hsla(196, 100%, 31%, 1);
+  --celestial-blue: hsla(196, 100%, 42%, 1);
+  --shadow-1: 0px 5px 5px 0px rgb(216, 220, 223);
+  --shadow-2: 0px 10px 10px 5px rgb(40, 42, 43, 80%);
+  --shadow-3: 50px 50px 0px 0px rgba(100, 199, 230, 0.5),
+    50px 50px 0px 0px rgba(121, 198, 236, 0.1);
+  --bs-shadow-card: 0 3px 50px 0 #263b63;
+}
+
+/*projecto 10*/
+
+.conta-clima {
+  font-size: 10px;
+  background: var(--celestial-blue);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.conta-clima .error {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 90px;
+}
+
+.conta-clima .search {
+  position: relative;
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  width: 80%;
+  height: 25px;
+}
+
+.conta-clima .search input {
+  margin: 10px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  color: var(--black);
+  background: var(--write);
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 5px var(--write-shadow),
+    inset -4px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.conta-clima .search button {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 50%;
+  width: 10px;
+}
+
+.conta-clima .search button:hover {
+  box-shadow: inset -3px -3px 5px var(--write-shadow),
+    inset 3px 3px 3px rgba(94, 104, 121, 0.288);
+}
+
+.conta-clima .search button i {
+  font-size: 14px;
+}
+
+.clima {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc-temp-pais {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.clima img {
+  width: 100px;
+}
+
+.col {
+  margin: 5px;
+  padding: 0 15px;
+}
+
+.col img {
+  width: 16px;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail .col p {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@media (width <=768px) {
+  .conta-clima .search {
+    top: 0;
+    margin: 10px;
+    padding: 10px;
+    width: 60%;
+  }
+
+  .clima {
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 5px;
+  }
+
+  .desc-temp-pais {
+    padding: 0 10px;
+    border-right: solid 1px var(--write);
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .detail .col {
+    padding: 0 15px;
+  }
+
+  .col img {
+    width: 18px;
+  }
+
+  .col1 {
+    border-right: solid 1px var(--write);
+  }
+}

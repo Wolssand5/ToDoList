@@ -1,0 +1,117 @@
+
+#preloader{
+         padding-inline: 10%;
+     background: #e8eaec;  
+       padding-block:20px ;
+}
+.load-head {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 50px;
+}
+.load-head .load-contain{
+    animation: 2s load infinite;
+}
+.load-head .load-contain:nth-child(2){
+    background: hsl(199, 58%, 63%);
+    width: 60%;
+    height: 80%;
+    padding: 0;
+    padding: auto;
+}
+.load-head .load-contain:nth-child(1) {
+    background: hsl(64, 49%, 59%);
+    width:50px;
+    height: 80%;
+    border-radius: 50%;
+}
+.load-head .load-contain:nth-child(3) {
+    background: hsl(286, 56%, 62%);
+    width: 20%;
+    height: 80%;
+   }
+
+.load-container{ 
+    display:grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width:100%;
+   height: 100vh;
+}
+.load-container .load-contain {
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    animation: 3s load infinite;
+}
+.load-container .load-contain:nth-child(1) {
+    background: hsl(32, 61%, 63%);
+        animation: 4s load infinite;
+}
+
+.load-container .load-contain:nth-child(2) {
+    background: hsl(0, 46%, 59%);
+        animation: 2s load infinite;
+}
+
+.load-container .load-contain:nth-child(3) {
+    background: hsl(194, 55%, 64%);
+        animation: 1s load infinite;
+}
+
+.load-container .load-contain:nth-child(4) {
+    background: hsl(240, 1%, 21%);
+        animation: 5s load infinite;
+}
+.load-container .load-contain:nth-child(5) {
+    background: hsl(233, 14%, 25%);
+        animation: 4s load infinite;
+}
+
+.load-container .load-contain:nth-child(6) {
+    background: hsl(235, 47%, 53%);
+}
+
+@media(width <= 576px){
+.load-container .load-contain:nth-child(1) {
+    background: hsl(32, 61%, 63%);
+}
+.load-container .load-contain:nth-child(2) {
+    background: hsl(0, 46%, 59%);
+    width: 90%;
+    height: 80%;
+}
+.load-container .load-contain:nth-child(3) {
+    background: hsl(194, 55%, 64%);
+    width: 60%;
+    height: 100%;
+}
+.load-container .load-contain:nth-child(4) {
+    background: hsl(240, 1%, 21%);
+    width: 100%;
+    height: 60%;
+}
+.load-container .load-contain:nth-child(5) {
+    background: hsl(233, 14%, 25%);
+    width: 100%;
+    height: 80%;
+}
+.load-container .load-contain:nth-child(6) {
+    background: hsl(235, 47%, 53%);
+    width: 100%;
+    height: 80%;
+}
+
+}
+ 
+@keyframes load {
+    0%{
+width: 10%;
+    }
+    25%{
+width: 25%;
+    }
+}
+
